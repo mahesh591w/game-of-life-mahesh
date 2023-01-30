@@ -17,7 +17,7 @@ pipeline {
 					steps {  
 								sh "sudo cd /mnt/project && rm -rf *"
 								
-								sh "sudo mkdir /mnt/web-sever/"
+								
 								sh "git clone https://github.com/mahesh591w/game-of-life.git /mnt/project/"
 								sh "rm -rf /root/.m2/repository/"
 								sh "mvn clean install"
