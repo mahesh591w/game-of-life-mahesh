@@ -15,7 +15,8 @@ pipeline {
 			stage ('git-gameoflife') {
 				
 					steps {  
-								sh "rm -rf *"
+								sh "sudo cd /mnt/project && rm -rf *"
+								
 								sh "sudo mkdir /mnt/web-sever/"
 								sh "git clone https://github.com/mahesh591w/game-of-life.git /mnt/project/"
 								sh "rm -rf /root/.m2/repository/"
